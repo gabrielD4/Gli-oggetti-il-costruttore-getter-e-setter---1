@@ -1,9 +1,15 @@
 public class Studente {
-    public String name;
+    private final String name;
 
-    public String surname;
+    private final String surname;
 
-    public int id;
+    private final int id;
+
+    public Studente (String name, String surname, int id) {
+        this.name = name;
+        this.surname = surname;
+        this.id = id;
+    }
 
     @Override
     public String toString() {
